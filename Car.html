@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Car</title>
+        <style>
+            body{
+                background-color: rgb(0, 0, 50);
+                text-align: center;
+            }
+            .car{
+                content: none;
+                position: relative;
+                height:100px;
+                width:200px;
+                background-color:red;
+                display: inline-block;
+                border-radius: 40px 40px 5px 5px;
+                box-shadow: 60px 100px 0px 1px red,
+                -60px 100px 0px 1px red;
+            }
+            .car::after{
+                content: "";
+                position:absolute;
+                top:15px;
+                left: -1px;
+                background-color:skyblue;
+                height:84px;
+                width:50px;
+                border-top-left-radius: 12px 30px;
+                border-top-right-radius: 12px 30px;
+                box-shadow:152px 0px skyblue;
+            }
+            .car::before{
+                content:"";
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                position: absolute;
+                top: 120px;
+                left: 220px;
+                background-color: rgb(255, 235, 100);
+                box-shadow: -281px 0px rgb(200, 0, 0),
+                -220px 75px 0px 5px #939393,
+                -220px 75px 0px 15px #222222,
+                -50px 75px 0px 5px #939393,
+                -50px 75px 0px 15px #222222;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="car"></div>
+    </body>
+</html>
